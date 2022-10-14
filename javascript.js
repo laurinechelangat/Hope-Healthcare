@@ -39,16 +39,14 @@ $(document).ready(function(){
   let services = document.querySelector('#services');
   
   document.addEventListener('DOMContentLoaded', () => {
-       // create the database
        let ScheduleDB = window.indexedDB.open('consultations', 1);
+  }
   
-       // if there's an error
        ScheduleDB.onerror = function() {
             console.log('error');
        }
-       // if everything is fine, assign the result is to the (letDB) instance 
+       
        ScheduleDB.onsuccess = function() {
-            // console.log('Database Ready');
   
             
             DB = ScheduleDB.result;
@@ -69,9 +67,7 @@ $(document).ready(function(){
             objectStore.createIndex('date', 'date', { unique: false } );
             objectStore.createIndex('time', 'time', { unique: false } );
             objectStore.createIndex('symptoms', 'symptoms', { unique: false } );
-  
-            //console.log('Database ready and fields created!');
-       }
+
   
        form.addEventListener('submit', addConsultations);
   
@@ -94,12 +90,12 @@ $(document).ready(function(){
                  form.reset();
             }
             transaction.oncomplete = () => {
-                 //console.log('New schedule added');
+                 
   
                  showConsultations();
             }
             transaction.onerror = () => {
-                //console.log();
+               
             }
   
        }

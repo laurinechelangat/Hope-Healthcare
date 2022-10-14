@@ -4,7 +4,6 @@
   --blue:#0188DF;
   --black:#354046;
 }
-
 *{
   font-family: 'Roboto', sans-serif;
   margin:0; padding:0;
@@ -16,25 +15,20 @@
   font-weight: 400;
   transition: all .2s linear;
 }
-
 *::selection{
   background:var(--black);
   color:#fff;
 }
-
 html{
   font-size: 62.5%;
   overflow-x: hidden;
 }
-
 body{
   overflow-x: hidden;
 }
-
 section{
   overflow: hidden;
 }
-
 .button{
   height:3.5rem;
   width: 15rem;
@@ -102,10 +96,8 @@ header .container{
   align-items: center;
   justify-content: space-between;
 }
-
 header a{
   color:var(--white);
- 
 }
 
 header a:hover{
