@@ -102,7 +102,7 @@ $(document).ready(function(){
              while(consultations.firstChild) {
                consultations.removeChild(consultations.firstChild);
              }
-            
+          
              let objectStore = DB.transaction('consultations').objectStore('consultations');
    
              objectStore.openCursor().onsuccess = function(e) {
@@ -113,7 +113,6 @@ $(document).ready(function(){
                        ConsultationHTML.setAttribute('data-consultation-id', cursor.value.key);
                        ConsultationHTML.classList.add('list-group-item');
                        
-                    
                        ConsultationHTML.innerHTML = `  
                             <p class="font-weight-bold">Patient Name:  <span class="font-weight-normal">${cursor.value.patientname}<span></p>
                              <p class="font-weight-bold">Contact:  <span class="font-weight-normal">${cursor.value.contact}<span></p>
