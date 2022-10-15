@@ -58,9 +58,7 @@ $(document).ready(function(){
         ScheduleDB.onupgradeneeded = function(e) {
              
              let db = e.target.result;
-             
              let objectStore = db.createObjectStore('consultations', { keyPath: 'key', autoIncrement: true } );
-
              objectStore.createIndex('patientname', 'patientname', { unique: false } );
              objectStore.createIndex('contact', 'contact', { unique: false } );
              objectStore.createIndex('date', 'date', { unique: false } );
