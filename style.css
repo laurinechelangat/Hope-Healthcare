@@ -3,6 +3,8 @@
 :root{
   --blue:#0188DF;
   --black:#354046;
+  overflow: hidden;
+
 }
 
 *{
@@ -14,12 +16,15 @@
   text-decoration: none !important;
   text-transform: capitalize;
   font-weight: 400;
+  overflow: hidden;
   transition: all .2s linear;
 }
 
 *::selection{
   background:var(--black);
   color:#fff;
+  overflow: hidden;
+
 }
 
 html{
@@ -180,10 +185,12 @@ header .fa-bars{
   font-size: 1.7rem;
   padding-left: 6rem;
   color:#666;
+  overflow: hidden;
 }
 
 .facility{
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .facility .box-container{
@@ -191,6 +198,7 @@ header .fa-bars{
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 3rem;
+  overflow: hidden;
 }
 
 .facility .box-container .box{
@@ -215,6 +223,7 @@ header .fa-bars{
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
+  overflow: hidden;
 }
 
 .review .heading{
@@ -356,24 +365,28 @@ Consultaion form */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .post .box-container .box{
-  width:30rem;
+  width:30px;
   margin:2rem 1rem;
   overflow: hidden;
   border-radius: .5rem;
   box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+  overflow: hidden;
 }
 
 .post .box-container .box img{
   height:20rem;
-  width: 100%;
+  width: 40%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .post .box-container .box .content{
   padding:0 1.5rem;
+  overflow: hidden;
 }
 
 .post .box-container .box .content span{
@@ -381,20 +394,24 @@ Consultaion form */
   font-size: 1.5rem;
   display: block;
   padding:1rem 0;
+  overflow: hidden;
 }
 
 .post .box-container .box .content h3{
   font-size: 2rem;
   color:var(--black);
+  overflow: hidden;
 }
 
 .post .box-container .box .content:hover h3{
   color:var(--blue);
+  overflow: hidden;
 }
 
 .post .box-container .box .content p{
   font-size: 1.3rem;
   color:var(--black);
+  overflow: hidden;
 }
 
 .footer{
@@ -511,5 +528,10 @@ header .fa-times{
   .contact form input[type="submit"]{
     width:100%;
   }
+
+}
+#f2{
+  overflow: hidden;
+  width: 300px;
 
 }
